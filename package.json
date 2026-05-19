@@ -1,6 +1,6 @@
 {
   "name": "@p-vbordei/hmac-sign",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "HMAC-SHA256 signing and timing-safe verification for webhooks, with optional replay protection. Zero dependencies (Node crypto only).",
   "keywords": [
     "hmac",
