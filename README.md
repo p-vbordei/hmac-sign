@@ -2,6 +2,10 @@
 
 [![ci](https://github.com/p-vbordei/hmac-sign/actions/workflows/ci.yml/badge.svg)](https://github.com/p-vbordei/hmac-sign/actions/workflows/ci.yml)
 
+[![npm](https://img.shields.io/npm/v/%40p-vbordei%2Fhmac-sign.svg)](https://www.npmjs.com/package/@p-vbordei/hmac-sign)
+[![downloads](https://img.shields.io/npm/dm/%40p-vbordei%2Fhmac-sign.svg)](https://www.npmjs.com/package/@p-vbordei/hmac-sign)
+[![bundle](https://img.shields.io/bundlejs/size/%40p-vbordei%2Fhmac-sign)](https://bundlejs.com/?q=%40p-vbordei%2Fhmac-sign)
+
 HMAC-SHA256 signing and timing-safe verification for webhooks. Two flavors — with timestamp (Stripe-style, replay-protected) and bare (GitHub-style). Zero dependencies; uses Node's built-in `crypto`.
 
 ```ts
