@@ -1,5 +1,7 @@
 # hmac-sign
 
+[![ci](https://github.com/p-vbordei/hmac-sign/actions/workflows/ci.yml/badge.svg)](https://github.com/p-vbordei/hmac-sign/actions/workflows/ci.yml)
+
 HMAC-SHA256 signing and timing-safe verification for webhooks. Two flavors — with timestamp (Stripe-style, replay-protected) and bare (GitHub-style). Zero dependencies; uses Node's built-in `crypto`.
 
 ```ts
