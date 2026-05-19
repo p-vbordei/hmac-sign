@@ -1,0 +1,44 @@
+{
+  "name": "hmac-sign",
+  "version": "0.1.0",
+  "description": "HMAC-SHA256 signing and timing-safe verification for webhooks, with optional replay protection. Zero dependencies (Node crypto only).",
+  "keywords": ["hmac", "sha256", "webhook", "signature", "verify", "sign"],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": {
+    "name": "Vlad Bordei",
+    "email": "bordeivlad@gmail.com",
+    "url": "https://github.com/p-vbordei"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p-vbordei/hmac-sign.git"
+  },
+  "bugs": {
+    "url": "https://github.com/p-vbordei/hmac-sign/issues"
+  },
+  "homepage": "https://github.com/p-vbordei/hmac-sign#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
