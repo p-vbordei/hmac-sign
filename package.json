@@ -1,8 +1,15 @@
 {
-  "name": "hmac-sign",
+  "name": "@p-vbordei/hmac-sign",
   "version": "0.1.0",
   "description": "HMAC-SHA256 signing and timing-safe verification for webhooks, with optional replay protection. Zero dependencies (Node crypto only).",
-  "keywords": ["hmac", "sha256", "webhook", "signature", "verify", "sign"],
+  "keywords": [
+    "hmac",
+    "sha256",
+    "webhook",
+    "signature",
+    "verify",
+    "sign"
+  ],
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -12,7 +19,11 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "vitest run",

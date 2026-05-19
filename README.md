@@ -5,7 +5,7 @@
 HMAC-SHA256 signing and timing-safe verification for webhooks. Two flavors — with timestamp (Stripe-style, replay-protected) and bare (GitHub-style). Zero dependencies; uses Node's built-in `crypto`.
 
 ```ts
-import { sign, verify, signSimple, verifySimple } from "hmac-sign";
+import { sign, verify, signSimple, verifySimple } from "@p-vbordei/hmac-sign";
 
 // Stripe-style: timestamp inside the signed input
 const { header } = sign(body, SECRET);
@@ -24,7 +24,7 @@ if (!verifySimple(body, SECRET, sigHeader)) throw new Error("bad signature");
 ## Install
 
 ```sh
-npm install hmac-sign
+npm install @p-vbordei/hmac-sign
 ```
 
 Node 18+. Uses `node:crypto` (`createHmac` + `timingSafeEqual`).
